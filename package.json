@@ -1,0 +1,20 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./src/styles/input.css -o ./dist/output.css --watch",
+    "dev": "live-server ./dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://pratik280.github.io/faq-accordion-card",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "live-server": "^1.2.1",
+    "tailwindcss": "^3.0.15"
+  }
+}
