@@ -423,6 +423,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -468,6 +472,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.bg-very-dark-desaturated-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(238 29% 16% / var(--tw-bg-opacity));
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.text-very-dark-grayish-blue {
+  --tw-text-opacity: 1;
+  color: hsl(237 12% 33% / var(--tw-text-opacity));
 }
