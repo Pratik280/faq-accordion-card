@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-container {
+  margin-inline: auto;
+  width: min(90%, 750px);
+}
+
 @layer base {
   body {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
