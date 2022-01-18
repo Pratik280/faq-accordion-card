@@ -1,6 +1,6 @@
 const questions = document.querySelectorAll("#question");
 questions.forEach((question) => {
-  question.onclick = (e) => {
+  question.onclick = () => {
     let hiddenText = question.nextElementSibling
     hiddenText.classList.toggle("hidden");
     let svg = question.querySelector("svg");
