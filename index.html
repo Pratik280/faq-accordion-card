@@ -12,9 +12,9 @@
 <body
   class="text-very-dark-grayish-blue bg-gradient-to-b from-soft-violet to-soft-blue bg-no-repeat min-h-screen flex flex-col justify-center items-center">
 
-  <div class="lg:grid lg:grid-cols-2 lg:gap-12 custom-container bg-white rounded-3xl px-6 md:px-12 lg:px-28 py-8 my-32">
+  <main class="lg:grid lg:grid-cols-2 lg:gap-12 custom-container bg-white rounded-3xl px-6 md:px-12 lg:px-28 py-8 my-32">
 
-    <div>
+    <section>
       <div class="flex flex-col justify-center items-center">
         <div class="lg:relative">
           <picture class="">
@@ -32,13 +32,13 @@
             alt="illustration box">
         </div>
       </div>
-    </div>
+    </section>
 
-    <div>
+    <section>
       <h1 class="text-very-dark-desaturated-blue font-bold text-4xl text-center md:text-left my-8 mt-20">FAQ</h1>
       <ul class="divide-y divide-light-grayish-blue">
         <li class="py-4">
-          <div id="question" class="hover:text-soft-red hover:cursor-pointer flex justify-between">
+          <div  class="question hover:text-soft-red hover:cursor-pointer flex justify-between">
             <div class="">How many team members can I invite? </div>
             <div class="flex justify-center items-center">
               <svg class="pointer-events-none" width="10" height="7" xmlns="http://www.w3.org/2000/svg">
@@ -51,7 +51,7 @@
             for the Premium plan. </div>
         </li>
         <li class="py-4">
-          <div id="question" class="hover:text-soft-red hover:cursor-pointer flex justify-between">
+          <div class="question hover:text-soft-red hover:cursor-pointer flex justify-between">
             <div>What is the maximum file upload size? </div>
             <div class="flex justify-center items-center">
               <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
@@ -63,7 +63,7 @@
           </div>
         </li>
         <li class="py-4">
-          <div id="question" class="hover:text-soft-red hover:cursor-pointer flex justify-between">
+          <div class="question hover:text-soft-red hover:cursor-pointer flex justify-between">
             <div>How do I reset my password?</div>
             <div class="flex justify-center items-center">
               <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@
             emailed to you.</div>
         </li>
         <li class="py-4">
-          <div id="question" class="hover:text-soft-red hover:cursor-pointer flex justify-between">
+          <div class="question hover:text-soft-red hover:cursor-pointer flex justify-between">
             <div>Can I cancel my subscription? </div>
             <div class="flex justify-center items-center">
               <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
@@ -89,7 +89,7 @@
           <div class="hidden mt-2">Yes! Send us a message and we’ll process your request no questions asked.</div>
         </li>
         <li class="py-4">
-          <div id="question" class="hover:text-soft-red hover:cursor-pointer flex justify-between">
+          <div class="question hover:text-soft-red hover:cursor-pointer flex justify-between">
             <div>Do you provide additional support? </div>
             <div class="flex justify-center items-center">
               <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
@@ -102,17 +102,17 @@
           </div>
         </li>
       </ul>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div class="attribution text-center text-white mt-2">
+  <footer class="attribution text-center text-white mt-2">
     Challenge by <a href="https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam"
       target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/Pratik280">Pratik280</a>.
-  </div>
+  </footer>
 
   <script>
-    const questions = document.querySelectorAll("#question");
+    const questions = document.querySelectorAll(".question");
     questions.forEach((question) => {
       question.onclick = () => {
         let hiddenText = question.nextElementSibling
