@@ -5,6 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "watch-css": "npx tailwindcss -i ./src/styles/input.css -o ./dist/output.css --watch",
+    "build-css": "npx tailwindcss -i ./src/styles/input.css -o ./dist/output.css --minify",
     "dev": "live-server ./dist/",
     "deploy": "gh-pages -d dist"
   },
